@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin:5px;
+    height: 100vh;
+    width: 100vw;
+    background-color:darkgray;
+    padding-top: 120px;
+    padding-bottom: auto;
+    padding-right: 120px;
+    padding-left: 120px;    
+    display:grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+
+   " main1 main2  side-bar"
+   " main3  main3  side-bar" ;                       
+}
+.danial{
+    margin: 20px;
+    border-radius: 15px;
+    grid-area:main1;
+    background-color: rgb(78, 19, 100);
+    
+    padding-top: 0%;
+}
+
+.walter{
+    grid-area:main2;
+    background-color:rgb(49, 88, 14);
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.row2{
+    background-color:darkgray ;
+    grid-area:main3;
+    margin: 20px;
+    border-radius: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "lef righ";
+
+}
+
+.main31{
+    background-color: cornflowerblue;
+    grid-area: lef;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.main32{
+    background-color: rgb(133, 130, 27);
+    grid-area: righ;
+    margin-left: 20px;
+    border-radius: 15px;
+} 
+
+
+
+.kira{
+    grid-area: side-bar;
+    background-color:rgb(16, 97, 110);
+    margin: 20px;
+    border-radius: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pics */
+
+.danial-pic{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    float:left;
+
+}
+
+.bg-pattern{
+    position: relative;
+    float:right;
+    margin-right: 100px;
+    
+
+}
+
+/* name-prof */
+
+.names-prof{
+    position: relative;
+    display:grid;
+    float:0 auto;
+    margin-top:20px;
+    margin-left :70px;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    " na "
+    "pro";
+}
+
+.name{
+    grid-area:na;
+    color:white
+
+}
+.prof{
+    grid-area:pro;
+    color:gainsboro
+}
+
+/* font */
+
+h2{
+    font-size: 14px;
+    color: white;
+    margin: 20px;
+}
+ 
+p{
+    font-size:15px;
+    color:darkgray;
+    margin:20px;
+    
+}
+
+
+
+/* mobile-view*/
+
+@media all and (max-width:500px)
+{
+    .container{
+        margin:5px;
+        height: 200vh;
+        width: auto;
+        background-color:darkgray;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-right: 10px;
+        padding-left: 10px;    
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20%  auto 20%;
+        grid-template-areas:
+    
+       "main1"
+       "main2"
+       "main3"
+       "side-bar" ; 
+
+    }
+
+    .danial{
+        margin: 20px;
+        border-radius: 15px;
+        grid-area:main1;
+        background-color: rgb(78, 19, 100);
+        
+        padding-top: 0%;
+    }
+    
+    .walter{
+        grid-area:main2;
+        background-color:rgb(49, 88, 14);
+        margin: 20px;
+        border-radius: 15px;
+    }
+    
+    .row2{
+        background-color:darkgray ;
+        grid-area:main3;
+        margin: 0px;
+        border-radius: 15px;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% auto;
+        grid-template-areas: 
+        "lef"
+        "righ";
+    
+    }
+    
+    .main31{
+        background-color: cornflowerblue;
+        grid-area: lef;
+        margin: 20px;
+        border-radius: 15px;
+    }
+    
+    .main32{
+        background-color: rgb(133, 130, 27);
+        grid-area: righ;
+        margin: 20px;
+        border-radius: 15px;
+    } 
+    
+    
+    
+    .kira{
+        grid-area: side-bar;
+        background-color:rgb(16, 97, 110);
+        margin: 20px;
+        border-radius: 15px;
+    
+    }
+
+
+
+
+
+
+
+
+
+}
